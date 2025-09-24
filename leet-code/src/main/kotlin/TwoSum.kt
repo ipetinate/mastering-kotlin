@@ -29,6 +29,19 @@ fun twoSumExercise(list: List<Int>, target: Int): List<Int> {
 /**
  * HashMap variant - O(n) [ideal/better performance solution - senior]
  */
-fun twoSumHashMapExercise() {
-    // TODO: implements this variant
+fun twoSumHashMapExercise(numbers: List<Int>, target: Int): List<Int> {
+    val map = HashMap<Int, Int>()
+
+    for ((index, number) in numbers.withIndex()) {
+        val complement = target - number
+        val complementIndex = map[complement]
+
+        if (complementIndex != null) {
+            return listOf(complementIndex, index)
+        }
+
+        map[number] = index
+    }
+
+    return emptyList()
 }
