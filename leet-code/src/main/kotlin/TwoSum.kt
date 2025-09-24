@@ -8,9 +8,9 @@
  */
 
 /**
- * Loop variant - O(n²) [brute-force solution - junior/mid]
+ * Loop variant - O(n²) (brute-force solution - junior/mid)
  */
-fun twoSumExercise(list: List<Int>, target: Int): List<Int> {
+fun twoSumExercise(list: List<Int>, target: Int): List<Int>? {
     val indexedList = list.withIndex()
 
     for ((index, item) in indexedList) {
@@ -23,13 +23,13 @@ fun twoSumExercise(list: List<Int>, target: Int): List<Int> {
         }
     }
 
-    return emptyList()
+    return null
 }
 
 /**
- * HashMap variant - O(n) [ideal/better performance solution - senior]
+ * HashMap variant - O(n) (ideal/better performance solution - senior)
  */
-fun twoSumHashMapExercise(numbers: List<Int>, target: Int): List<Int> {
+fun twoSumHashMapExercise(numbers: List<Int>, target: Int): List<Int>? {
     val map = HashMap<Int, Int>()
 
     for ((index, number) in numbers.withIndex()) {
@@ -43,5 +43,5 @@ fun twoSumHashMapExercise(numbers: List<Int>, target: Int): List<Int> {
         map[number] = index
     }
 
-    return emptyList()
+    return null
 }

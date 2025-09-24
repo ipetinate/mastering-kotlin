@@ -35,7 +35,7 @@ class TwoSumTest {
 
         val result = twoSumExercise(list, 5)
 
-        assertEquals(result, listOf())
+        assertEquals(result, null)
     }
 
     @Test
@@ -44,7 +44,7 @@ class TwoSumTest {
 
         val result = twoSumExercise(list, 11)
 
-        assertEquals(result, listOf())
+        assertEquals(result, null)
     }
 
     @Test
@@ -53,7 +53,7 @@ class TwoSumTest {
 
         val result = twoSumExercise(list, 5)
 
-        assertEquals(result, listOf())
+        assertEquals(result, null)
     }
 
     @Test
@@ -62,7 +62,7 @@ class TwoSumTest {
 
         val result = twoSumExercise(list, 6)
 
-        assertEquals(result, listOf())
+        assertEquals(result, null)
     }
 
     @Test
@@ -80,7 +80,7 @@ class TwoSumTest {
 
         val result = twoSumExercise(list, -1)
 
-        assertEquals(result, listOf())
+        assertEquals(result, null)
     }
 
     @Test
@@ -116,7 +116,7 @@ class TwoSumTest {
 
         val result = twoSumHashMapExercise(list, 5)
 
-        assertEquals(result, listOf())
+        assertEquals(result, null)
     }
 
     @Test
@@ -125,7 +125,7 @@ class TwoSumTest {
 
         val result = twoSumHashMapExercise(list, 11)
 
-        assertEquals(result, listOf())
+        assertEquals(result, null)
     }
 
     @Test
@@ -134,7 +134,7 @@ class TwoSumTest {
 
         val result = twoSumHashMapExercise(list, 5)
 
-        assertEquals(result, listOf())
+        assertEquals(result, null)
     }
 
     @Test
@@ -143,7 +143,7 @@ class TwoSumTest {
 
         val result = twoSumHashMapExercise(list, 6)
 
-        assertEquals(result, listOf())
+        assertEquals(result, null)
     }
 
     @Test
@@ -161,6 +161,6 @@ class TwoSumTest {
 
         val result = twoSumHashMapExercise(list, -1)
 
-        assertEquals(result, listOf())
+        assertEquals(result, null)
     }
 }
