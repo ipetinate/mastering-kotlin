@@ -12,10 +12,17 @@ class LinkedListTest {
         first.next = second
         second.next = third
 
-        val head = first
+        assertEquals(first.toList(), mutableListOf(3, 5, 7))
+    }
 
-        val result = readLinkedList(head)
+    @Test
+    fun `build  linked list from list`() {
+        val list = listOf<Int>(2, 4, 3)
+        val linkedList = buildList(list)
 
-        assertEquals(result, mutableListOf(3, 5, 7))
+        assertEquals(2, linkedList?.value)
+        assertEquals(4, linkedList?.next?.value)
+        assertEquals(3, linkedList?.next?.next?.value)
+        assertEquals(list, linkedList.toList())
     }
 }
