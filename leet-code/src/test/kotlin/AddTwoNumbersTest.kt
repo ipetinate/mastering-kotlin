@@ -4,8 +4,8 @@ import kotlin.test.assertEquals
 class AddTwoNumbersTest {
     @Test
     fun `get properly sum from linked lists`() {
-        val l1 = buildList(listOf(2, 4, 3));
-        val l2 = buildList(listOf(5, 6, 4));
+        val l1 = buildList(listOf(2, 4, 3))
+        val l2 = buildList(listOf(5, 6, 4))
 
         val result = addTwoNumbers(l1, l2)
 
